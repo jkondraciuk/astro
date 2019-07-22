@@ -1,10 +1,11 @@
 <template>
     <div class="logo-wrapper">
+        <span class="logo-wrapper__logo">Astro.</span>
     </div>
 </template>
 <script>
 export default {
-    name: 'PageBackground'
+    name: 'Logo'
 }
 </script>
-<style src="./PageBackground.scss" lang="scss" scoped />
+<style src="./Logo.scss" lang="scss" scoped />
