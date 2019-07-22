@@ -1,5 +1,5 @@
 <template>
-    <div class="page-background-wrapper">
+    <div class="navbar-wrapper">
     </div>
 </template>
 <script>

@@ -1,5 +1,5 @@
 <template>
-    <div class="page-background-wrapper">
+    <div class="logo-wrapper">
     </div>
 </template>
 <script>
