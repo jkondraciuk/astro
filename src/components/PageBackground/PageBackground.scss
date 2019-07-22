@@ -1,0 +1,10 @@
+.page-background {
+    position: absolute;
+    z-index: -99999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/img/page_background.jpg');
+    background-size: cover;
+}
