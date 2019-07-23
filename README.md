@@ -23,7 +23,35 @@ Add more general information about project. What the purpose of the project is? 
 * Tech 3 - version 3.0
 
 ## Setup
-Describe how to install / setup your local environement / add link to demo version.
+* Project setup
+```
+npm install
+```
+
+* Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+* Compiles and minifies for production
+```
+npm run build
+```
+
+* Run your tests
+```
+npm run test
+```
+
+* Lints and fixes files
+```
+npm run lint
+```
+
+* Run your unit tests
+```
+npm run test:unit
+```
 
 ## Code Examples
 Show examples of usage:
