@@ -63,12 +63,8 @@ List of features ready and TODOs for future development
 * Awesome feature 2
 * Awesome feature 3
 
-To-do list:
-* Wow improvement to be done 1
-* Wow improvement to be done 2
-
 ## Status
-Project is: _in progress_, _finished_, _no longer continue_ and why?
+Project is: _in progress_
 
 ## Inspiration
 Add here credits. Project inspired by..., based on...
