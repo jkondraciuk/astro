@@ -1,5 +1,6 @@
 <template>
     <div class="page-background-wrapper">
+        <div class="page-background-wrapper__dark"></div>
     </div>
 </template>
 <script>
