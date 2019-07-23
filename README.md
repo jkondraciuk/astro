@@ -1,4 +1,4 @@
-# Project Name
+# Astro
 > Here goes your awesome project description!
 
 ## Table of contents
