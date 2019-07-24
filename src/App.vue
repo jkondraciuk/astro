@@ -13,8 +13,11 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto';
-    font-size: 62.5%;
     font-weight: 300;
+  }
+
+  html {
+    font-size: 62.5%;
   }
 
   body {

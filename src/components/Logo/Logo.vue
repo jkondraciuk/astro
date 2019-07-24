@@ -1,6 +1,6 @@
 <template>
     <div class="logo-wrapper">
-        <span class="logo-wrapper__logo">Astro.</span>
+        <router-link to="/about" class="logo-wrapper__logo">Astro.</router-link>
     </div>
 </template>
 <script>
