@@ -21,6 +21,7 @@ Add more general information about project. What the purpose of the project is? 
 * Vue-router - version 3.0.3
 * Vuex - version 3.0.1
 * Babel - version 7.0.0
+* Babel-jest - version 23.6.0
 * ESLint - version 5.16.0
 * Node-sass - version 4.9.0
 
