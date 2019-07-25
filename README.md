@@ -1,5 +1,5 @@
 # Astro
-> Here goes your awesome project description!
+> A web application where you can search every space-related thing and look for some pictures of it
 
 ## Table of contents
 * [General info](#general-info)
