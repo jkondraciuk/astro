@@ -56,10 +56,6 @@ npm run lint
 npm run test:unit
 ```
 
-## Code Examples
-Show examples of usage:
-`put-your-code-here`
-
 ## Status
 Project is: _in progress_
 
