@@ -1,6 +1,6 @@
 <template>
     <div class="search-wrapper">
-
+        <input class="search-wrapper__input" type="text" placeholder="e.g. Moon">
     </div>
 </template>
 
