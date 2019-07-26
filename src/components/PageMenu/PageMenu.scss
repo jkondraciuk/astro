@@ -2,6 +2,11 @@
     &__list {
         list-style-type: none;
     }
+    &__item {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
     &__link {
         color: white;
         text-decoration: none;
