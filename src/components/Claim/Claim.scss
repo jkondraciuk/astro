@@ -10,6 +10,7 @@
         width: 276px;
         margin-bottom: 10px;
         font-size: 1.6rem;
+        line-height: 130%;
         opacity: .7;
     }
 }
@@ -18,11 +19,34 @@
     .claim-wrapper {
         margin-bottom: 35px;
         &__header {
+            margin-bottom: 0;
             font-size: 11rem;
+            letter-spacing: 1px;
         }
         &__paragraph {
             width: 480px;
             font-size: 2.1rem;
+        }
+    }
+}
+
+@include res(md) {
+    .claim-wrapper {
+        &__header {
+            font-size: 12.5rem;
+            letter-spacing: 2px;
+        }
+        &__paragraph {
+            opacity: .8;
+        }
+    }
+}
+
+@include res(xl) {
+    .claim-wrapper {
+        &__header {
+            font-size: 13rem;
+            letter-spacing: 3px;
         }
     }
 }

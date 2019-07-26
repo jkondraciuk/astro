@@ -32,5 +32,24 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding-bottom: 15px;
+  }
+
+  @include res(md) {
+    .home-main {
+      padding-bottom: 20px;
+    }
+  }
+
+  @include res(lg) {
+    .home-main {
+      padding-bottom: 23px;
+    }
+  }
+
+  @include res(xl) {
+    .home-main {
+      padding-bottom: 28px;
+    }
   }
 </style>
