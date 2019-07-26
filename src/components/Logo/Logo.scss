@@ -1,8 +1,16 @@
 .logo-wrapper {
     &__logo {
-        color: white;
+        color: $logo;
         font-size: 2.1rem;
         font-weight: 400;
         text-decoration: none;
+    }
+}
+
+@include res(sm) {
+    .logo-wrapper {
+        &__logo {
+            font-size: 2.6rem;
+        }
     }
 }

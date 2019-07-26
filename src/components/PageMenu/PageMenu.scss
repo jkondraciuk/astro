@@ -7,3 +7,11 @@
         text-decoration: none;
     }
 }
+
+@include res(sm) {
+    .page-menu-wrapper {
+        &__item {
+            font-size: 2.1rem;
+        }
+    }
+}
