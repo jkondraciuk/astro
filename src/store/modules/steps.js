@@ -1,11 +1,11 @@
 import { isContext } from "vm";
 
 const state = {
-
+    step: 0
 }
 
 const getters = {
-
+    getStep = state => state.step
 }
 
 const actions = {
