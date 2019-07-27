@@ -5,7 +5,7 @@ const state = {
 }
 
 const getters = {
-    getStep = state => state.step
+    getStep : state => state.step
 }
 
 const actions = {

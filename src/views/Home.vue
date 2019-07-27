@@ -1,12 +1,12 @@
 <template>
   <div class="home">
     <transition name="fade">
-      <PageBackground v-if="step === 0" />
+      <PageBackground v-if="getStep === 0" />
     </transition>
     <Navbar />
-    <div :class="['home-main', { 'home-main--next' : step === 1 }]">
-      <Claim v-if="step === 0" />
-      <SearchInput :dark="step === 1" />
+    <div :class="['home-main', { 'home-main--next' : getStep === 1 }]">
+      <Claim v-if="getStep === 0" />
+      <SearchInput :dark="getStep === 1" />
     </div>
   </div>
 </template>
@@ -16,6 +16,8 @@ import PageBackground from '@/components/PageBackground/PageBackground';
 import Navbar from '@/components/Navbar/Navbar';
 import Claim from '@/components/Claim/Claim';
 import SearchInput from '@/components/SearchInput/SearchInput';
+
+import { mapGetters } from 'vuex';
 
 export default {
   name: 'home',
@@ -29,6 +31,9 @@ export default {
     return {
       step: 0
     }
+  },
+  computed: {
+    ...mapGetters (['getStep'])
   }
 };
 </script>
