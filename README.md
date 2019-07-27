@@ -61,7 +61,7 @@ npm run test:unit
 Project is: _in progress_
 
 ## Inspiration
-Add here credits. Project inspired by..., based on...
+I made this project as an interpretation of [@helloroman](https://github.com/helloroman)'s project called "spacer"
 
 ## Contact
 Created by [@jkondraciuk](https://jkondraciuk.github.io/portfolio) - feel free to contact me!
