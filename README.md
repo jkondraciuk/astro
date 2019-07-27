@@ -14,7 +14,8 @@
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
-![Example screenshot](./img/screenshot.png)
+![Home page](./img/screenshot.png)
+![About page](./img/screenshot.png)
 
 ## Technologies
 * Vue - version 2.6.10
