@@ -4,7 +4,7 @@
       <PageBackground v-if="step === 0" />
     </transition>
     <Navbar />
-    <div class="home-main">
+    <div :class="['home-main', { 'home-main--next' : step === 1 }]">
       <Claim v-if="step === 0" />
       <SearchInput :dark="step === 1" />
     </div>
@@ -47,6 +47,10 @@ export default {
     left: 50%;
     transform: translate(-50%, -50%);
     padding-bottom: 15px;
+
+    &--next {
+      top: 10%;
+    }
   }
 
   @include res(md) {
