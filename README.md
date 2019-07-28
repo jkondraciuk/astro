@@ -11,7 +11,7 @@
 * [Contact](#contact)
 
 ## General info
-I made this project because I wanted to create a web application with Vue.js, Vue-router and Vuex that is nice in terms of design and code. The site is RWD.
+I made this project because I wanted to create a web application with Vue.js, Vue-router and Vuex that is nice in terms of design and code. The site is RWD. I used NASA API in this application.
 
 ## Screenshots
 ![Home page](./screenshots/home.png)
