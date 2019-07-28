@@ -11,7 +11,7 @@
 * [Contact](#contact)
 
 ## General info
-Add more general information about project. What the purpose of the project is? Motivation?
+I made this project because I wanted to create a web application with Vue.js, Vue-router and Vuex that is nice in terms of design and code. The site is RWD.
 
 ## Screenshots
 ![Home page](./screenshots/home.png)
