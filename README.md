@@ -14,7 +14,7 @@
 Add more general information about project. What the purpose of the project is? Motivation?
 
 ## Screenshots
-![Home page](./img/screenshot.png)
+![Home page](./screenshots/home.png)
 ![About page](./img/screenshot.png)
 
 ## Technologies
