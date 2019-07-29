@@ -20,7 +20,7 @@ import SearchInput from '@/components/SearchInput/SearchInput';
 import { mapGetters } from 'vuex';
 
 export default {
-  name: 'home',
+  name: 'Home',
   components: {
     PageBackground,
     Navbar,

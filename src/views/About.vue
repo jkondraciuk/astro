@@ -8,8 +8,9 @@ export default {
   name: 'About'
 }
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
   body {
     background-image: url('../assets/img/about_background.jpg');
+    background-size: cover;
   }
 </style>
