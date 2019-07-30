@@ -5,7 +5,10 @@
       <h1 class="about__header">About us</h1>
       <h2 class="about__subheader">What we really do</h2>
       <div class="about__infos">
-        <InfoBox v-for="(content, index) in infoContent" :key="index" :content="content" />
+        <InfoBox v-for="(content, index) in infoContent"
+                 :key="index"
+                 :content="content"
+                 class="about__info" />
       </div>
     </div>
   </div>
@@ -88,6 +91,10 @@ export default {
       padding-bottom: 10px;
       border-bottom: 2px solid $grey-7;
       font-size: 1.6rem;
+    }
+    &__infos {
+      display: flex;
+      flex-direction: column;
     }
   }
 </style>
