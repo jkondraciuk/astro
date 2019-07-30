@@ -1,11 +1,11 @@
 <template>
   <div class="about">
-    <Navbar />
+    <Navbar class="about__nav" />
     <div class="about__main">
       <h1>This is an about page</h1>
       <h2>This is a subheader</h2>
       <div class="about__infos">
-        <InfoBox :content="content" />
+        <InfoBox v-for="(content, index) in infoContent" :key="index" :content="content" />
       </div>
     </div>
   </div>
@@ -22,10 +22,32 @@ export default {
   },
   data () {
     return {
-      content: {
-        header: 'This is a header',
-        paragraph: '...and this is a paragraph'
-      }
+      infoContent: [
+        {
+          header: 'This is a header',
+          paragraph: '...and this is a paragraph'
+        },
+        {
+          header: 'This is a header',
+          paragraph: '...and this is a paragraph'
+        },
+        {
+          header: 'This is a header',
+          paragraph: '...and this is a paragraph'
+        },
+        {
+          header: 'This is a header',
+          paragraph: '...and this is a paragraph'
+        },
+        {
+          header: 'This is a header',
+          paragraph: '...and this is a paragraph'
+        },
+        {
+          header: 'This is a header',
+          paragraph: '...and this is a paragraph'
+        },
+      ]
     }
   }
 }
@@ -38,6 +60,12 @@ export default {
   }
 
   .about {
+    &__nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
     &__main {
       width: 80%;
       margin: 0 auto;
