@@ -2,8 +2,8 @@
   <div class="about">
     <Navbar class="about__nav" />
     <div class="about__main">
-      <h1>This is an about page</h1>
-      <h2>This is a subheader</h2>
+      <h1 class="about__header">About us</h1>
+      <h2 class="about__subheader">What we really do</h2>
       <div class="about__infos">
         <InfoBox v-for="(content, index) in infoContent" :key="index" :content="content" />
       </div>
@@ -25,7 +25,7 @@ export default {
       infoContent: [
         {
           header: 'This is a header',
-          paragraph: '...and this is a paragraph'
+          paragraph: 'lorem'
         },
         {
           header: 'This is a header',
@@ -69,8 +69,25 @@ export default {
       width: 80%;
       margin: 0 auto;
       margin-top: 70vh;
+      padding: 25px;
+      text-align: center;
       background-color: $white;
       color: $grey-7;
+    }
+    &__header {
+      margin-bottom: 2px;
+      font-size: 2.6rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+    &__subheader {
+      width: 60%;
+      margin: 0 auto;
+      margin-bottom: 30px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $grey-7;
+      font-size: 1.6rem;
     }
   }
 </style>
