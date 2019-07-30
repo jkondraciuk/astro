@@ -5,18 +5,28 @@
       <h1>This is an about page</h1>
       <h2>This is a subheader</h2>
       <div class="about__infos">
-        <InfoBox />
+        <InfoBox :content="content" />
       </div>
     </div>
   </div>
 </template>
 <script>
 import Navbar from '@/components/Navbar/Navbar';
+import InfoBox from '@/components/InfoBox/InfoBox';
 
 export default {
   name: 'About',
   components: {
-    Navbar
+    Navbar,
+    InfoBox
+  },
+  data () {
+    return {
+      content: {
+        header: 'This is a header',
+        paragraph: '...and this is a paragraph'
+      }
+    }
   }
 }
 </script>
