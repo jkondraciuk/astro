@@ -31,23 +31,23 @@ export default {
           paragraph: 'lorem'
         },
         {
-          header: 'This is a header',
+          header: 'This is second one',
           paragraph: '...and this is a paragraph'
         },
         {
-          header: 'This is a header',
+          header: 'The third one',
           paragraph: '...and this is a paragraph'
         },
         {
-          header: 'This is a header',
+          header: 'And another one',
           paragraph: '...and this is a paragraph'
         },
         {
-          header: 'This is a header',
+          header: 'Hello I am a header',
           paragraph: '...and this is a paragraph'
         },
         {
-          header: 'This is a header',
+          header: 'Header here, header there..',
           paragraph: '...and this is a paragraph'
         },
       ]
