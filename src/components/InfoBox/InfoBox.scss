@@ -1,10 +1,12 @@
 .info-wrapper {
-    background-color: $grey-2;
     &__header {
+        margin-bottom: 5px;
         font-size: 2rem;
         font-weight: 400;
     }
     &__paragraph {
+        width: 80%;
+        margin: auto;
         font-size: 1.5rem;
         line-height: 120%;
     }

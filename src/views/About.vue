@@ -67,6 +67,9 @@ export default {
       position: fixed;
       top: 0;
       left: 0;
+      &--scrolled {
+        background-color: rgba(0,0,0,.6);
+      }
     }
     &__main {
       width: 80%;
@@ -95,6 +98,9 @@ export default {
     &__infos {
       display: flex;
       flex-direction: column;
+    }
+    &__info {
+      margin-bottom: 25px;
     }
   }
 </style>
