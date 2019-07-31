@@ -28,27 +28,27 @@ export default {
       infoContent: [
         {
           header: 'This is a header',
-          paragraph: 'lorem'
+          paragraph: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc consectetur, libero et pellentesque commodo, diam ligula pharetra diam, quis biben'
         },
         {
           header: 'This is second one',
-          paragraph: '...and this is a paragraph'
+          paragraph: 'Donec a sapien massa. Cras vehicula efficitur lorem vitae ornare. Nunc ut libero id orci tristique venenatis ut vitae turpis. Pellentesque aliquam'
         },
         {
           header: 'The third one',
-          paragraph: '...and this is a paragraph'
+          paragraph: 'Vivamus rutrum interdum mauris, vel cursus lectus viverra vel. Mauris dapibus id mauris vel hendrerit. Maecenas euismod est'
         },
         {
           header: 'And another one',
-          paragraph: '...and this is a paragraph'
+          paragraph: 'Orci tristique venenatis ut vitae turpis. Pellentesque aliquam risus eros, eget sagittis dui cursus sit amet. Sed gravida'
         },
         {
           header: 'Hello I am a header',
-          paragraph: '...and this is a paragraph'
+          paragraph: 'Aliquam et lacinia orci, ut sagittis mauris. In hac habitasse platea dictumst. Morbi vitae accumsan quam. Nulla viverra vestibulum magna, non volutpat nul'
         },
         {
           header: 'Header here, header there..',
-          paragraph: '...and this is a paragraph'
+          paragraph: 'Donec a sapien massa. Cras vehicula efficitur lorem vitae ornare. Nunc ut libero id orci tristique venenatis ut vitae turpis'
         },
       ]
     }
