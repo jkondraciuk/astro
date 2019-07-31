@@ -9,6 +9,7 @@
                  :key="index"
                  :content="content"
                  class="about__info" />
+        <PageFooter />
       </div>
     </div>
   </div>
@@ -16,12 +17,14 @@
 <script>
 import Navbar from '@/components/Navbar/Navbar';
 import InfoBox from '@/components/InfoBox/InfoBox';
+import PageFooter from '@/components/PageFooter/PageFooter';
 
 export default {
   name: 'About',
   components: {
     Navbar,
-    InfoBox
+    InfoBox,
+    PageFooter
   },
   data () {
     return {
