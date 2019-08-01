@@ -74,6 +74,7 @@ export default {
       transition: .4s;
     }
     &__main {
+      position: relative;
       width: 80%;
       margin: 0 auto;
       margin-top: 70vh;
@@ -81,6 +82,18 @@ export default {
       text-align: center;
       background-color: $white;
       color: $grey-7;
+      &::after {
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      background-color: darken($grey-7, 5%);
+      z-index: -9999;
+      transform: translate(-12px, 0);
+    }
     }
     &__header {
       margin-bottom: 2px;
