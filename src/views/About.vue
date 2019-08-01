@@ -107,13 +107,47 @@ export default {
 
   @include res(sm) {
     .about {
+      &__main {
+        max-width: 940px;
+      }
       &__infos {
         flex-wrap: wrap;
         flex-direction: row;
         justify-content: center;
       }
       &__info {
-        width: 320px;
+        width: 300px;
+      }
+    }
+  }
+
+  @include res(md) {
+    .about {
+      &__header {
+        padding: 10px;
+        font-size: 3rem;
+      }
+      &__subheader {
+        margin-bottom: 35px;
+      }
+      &__infos {
+        justify-content: space-around;
+      }
+      &__info {
+        width: 45%;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @include res(lg) {
+    .about {
+      &__header {
+        padding: 15px;
+        font-size: 3.4rem;
+      }
+      &__subheader {
+        margin-bottom: 40px;
       }
     }
   }
