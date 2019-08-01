@@ -104,4 +104,17 @@ export default {
       margin-bottom: 25px;
     }
   }
+
+  @include res(sm) {
+    .about {
+      &__infos {
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+      }
+      &__info {
+        width: 320px;
+      }
+    }
+  }
 </style>
