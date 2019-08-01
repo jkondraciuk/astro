@@ -151,4 +151,12 @@ export default {
       }
     }
   }
+
+  @include res(xl) {
+    .about {
+      &__subheader {
+        font-size: 2rem;
+      }
+    }
+  }
 </style>
