@@ -71,6 +71,7 @@ export default {
       top: 0;
       left: 0;
       background-color: rgba(0,0,0,.5);
+      transition: .4s;
     }
     &__main {
       width: 80%;
@@ -123,6 +124,9 @@ export default {
 
   @include res(md) {
     .about {
+      &__nav {
+        background-color: transparent;
+      }
       &__header {
         padding: 10px;
         font-size: 3rem;
