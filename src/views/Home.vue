@@ -6,7 +6,7 @@
     <Navbar />
     <div :class="['home-main', { 'home-main--next' : getStep === 1 }]">
       <Claim v-if="getStep === 0" />
-      <SearchInput :dark="getStep === 1" />
+      <SearchInput v-model="searchValue" :dark="getStep === 1" />
     </div>
   </div>
 </template>
@@ -34,6 +34,7 @@ export default {
   },
   data () {
     return {
+      searchValue : '',
       step: 0,
       loading: false,
       results: []
