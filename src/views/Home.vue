@@ -19,6 +19,10 @@ import SearchInput from '@/components/SearchInput/SearchInput';
 
 import { mapGetters } from 'vuex';
 
+import axios from 'axios';
+
+const API = 'https://images-api.nasa.gov/search';
+
 export default {
   name: 'Home',
   components: {
@@ -29,8 +33,27 @@ export default {
   },
   data () {
     return {
-      step: 0
+      step: 0,
+      loading: false,
+      results: []
     }
+  },
+  methods : {
+    handleInput: debounce (function () {
+      this.loading = true;
+      axios.get(`${API}?q=${this.searchValue}&media_type=image`)
+      .then((response) => {
+        this.results = response.data.collection.items;
+        this.loading = false;
+        this.step = 1;
+        if (this.searchValue === '') {
+          this.step = 0;
+        }
+      })
+      .catch((error) => {
+        console.log(error);
+      })
+    }, 800)
   },
   computed: {
     ...mapGetters (['getStep'])
