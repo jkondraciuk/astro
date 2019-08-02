@@ -20,6 +20,7 @@ import SearchInput from '@/components/SearchInput/SearchInput';
 import { mapGetters } from 'vuex';
 
 import axios from 'axios';
+import debounde from 'lodash.debounce';
 
 const API = 'https://images-api.nasa.gov/search';
 
