@@ -6,7 +6,9 @@
     <Navbar />
     <div :class="['home-main', { 'home-main--next' : getStep === 1 }]">
       <Claim v-if="getStep === 0" />
-      <SearchInput v-model="searchValue" :dark="getStep === 1" />
+      <SearchInput v-model="searchValue"
+                   :dark="getStep === 1"
+                   @input="handleInput" />
     </div>
   </div>
 </template>
@@ -42,19 +44,18 @@ export default {
   },
   methods : {
     handleInput: debounce (function () {
-      this.loading = true;
-      axios.get(`${API}?q=${this.searchValue}&media_type=image`)
-      .then((response) => {
-        this.results = response.data.collection.items;
-        this.loading = false;
-        this.step = 1;
-        if (this.searchValue === '') {
+      if (this.searchValue === '') {
           this.step = 0;
+        } else {
+          axios.get(`${API}?q=${this.searchValue}&media_type=image`)
+            .then((response) => {
+              this.results = response.data.collection.items;
+              this.step = 1;
+            })
+            .catch((error) => {
+              console.log(error);
+            })
         }
-      })
-      .catch((error) => {
-        console.log(error);
-      })
     }, 800)
   },
   computed: {
