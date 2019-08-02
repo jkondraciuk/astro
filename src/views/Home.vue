@@ -1,13 +1,13 @@
 <template>
   <div class="home">
     <transition name="fade">
-      <PageBackground v-if="getStep === 0" />
+      <PageBackground v-if="!getStep" />
     </transition>
     <Navbar />
-    <div :class="['home-main', { 'home-main--next' : getStep === 1 }]">
-      <Claim v-if="getStep === 0" />
+    <div :class="['home-main', { 'home-main--next' : getStep }]">
+      <Claim v-if="!getStep" />
       <SearchInput v-model="searchValue"
-                   :dark="getStep === 1"
+                   :dark="getStep"
                    @input="handleInput" />
     </div>
   </div>
@@ -37,7 +37,6 @@ export default {
   data () {
     return {
       searchValue : '',
-      step: 0,
       loading: false,
       results: []
     }
@@ -45,12 +44,10 @@ export default {
   methods : {
     handleInput: debounce (function () {
       if (this.searchValue === '') {
-          this.step = 0;
         } else {
           axios.get(`${API}?q=${this.searchValue}&media_type=image`)
             .then((response) => {
               this.results = response.data.collection.items;
-              this.step = 1;
             })
             .catch((error) => {
               console.log(error);

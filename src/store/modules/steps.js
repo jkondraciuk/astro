@@ -1,7 +1,7 @@
 import { isContext } from "vm";
 
 const state = {
-    step: 0
+    step: false
 }
 
 const getters = {
@@ -9,11 +9,15 @@ const getters = {
 }
 
 const actions = {
-
+    changeStep ({ commit }) {
+        commit('changeStep')
+    }
 }
 
 const mutations = {
-
+    changeStep (state) {
+        state.step = !state.step;
+    }
 }
 
 export default {
