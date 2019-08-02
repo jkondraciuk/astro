@@ -9,14 +9,14 @@ const getters = {
 }
 
 const actions = {
-    changeStep ({ commit }) {
-        commit('changeStep')
+    changeStep ({ commit }, value) {
+        commit('changeStep', value)
     }
 }
 
 const mutations = {
-    changeStep (state) {
-        state.step = !state.step;
+    changeStep (state, value) {
+        state.step = value;
     }
 }
 

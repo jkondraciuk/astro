@@ -19,7 +19,7 @@ import Navbar from '@/components/Navbar/Navbar';
 import Claim from '@/components/Claim/Claim';
 import SearchInput from '@/components/SearchInput/SearchInput';
 
-import { mapGetters } from 'vuex';
+import { mapGetters, mapActions } from 'vuex';
 
 import axios from 'axios';
 import debounce from 'lodash.debounce';
@@ -42,12 +42,15 @@ export default {
     }
   },
   methods : {
+    ...mapActions (['changeStep']),
     handleInput: debounce (function () {
       if (this.searchValue === '') {
+        this.changeStep(false);
         } else {
           axios.get(`${API}?q=${this.searchValue}&media_type=image`)
             .then((response) => {
               this.results = response.data.collection.items;
+              this.changeStep(true);
             })
             .catch((error) => {
               console.log(error);
