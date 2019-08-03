@@ -1,7 +1,7 @@
 <template>
-    <div class="navbar-wrapper">
+    <div :class="['navbar-wrapper', { 'navbar-wrapper--center' : dark }]">
         <Logo :dark="dark" />
-        <PageMenu v-show="!dark" />
+        <PageMenu v-show="!dark"/>
     </div>
 </template>
 <script>
