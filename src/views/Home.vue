@@ -3,7 +3,7 @@
     <transition name="fade">
       <PageBackground v-if="!getStep" />
     </transition>
-    <Navbar />
+    <Navbar v-if="!getStep" />
     <div :class="['home-main', { 'home-main--next' : getStep }]">
       <Claim v-if="!getStep" />
       <SearchInput v-model="searchValue"
