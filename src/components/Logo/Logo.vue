@@ -1,6 +1,6 @@
 <template>
     <div class="logo-wrapper">
-        <router-link to="/" class="logo-wrapper__logo" :style="style">Astro.</router-link>
+        <router-link to="/" class="logo-wrapper__logo" :style="style">Astro</router-link>
     </div>
 </template>
 <script>
