@@ -1,7 +1,7 @@
 <template>
     <div class="navbar-wrapper">
-        <Logo />
-        <PageMenu />
+        <Logo :dark="dark" />
+        <PageMenu v-show="!dark" />
     </div>
 </template>
 <script>
@@ -13,7 +13,8 @@ export default {
     components: {
         Logo,
         PageMenu
-    }
+    },
+    props: ['dark']
 }
 </script>
 <style src="./Navbar.scss" lang="scss" scoped />
