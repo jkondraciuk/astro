@@ -72,6 +72,10 @@ export default {
     opacity: 0;
   }
 
+  body {
+    background: $white !important;
+  }
+
   .home-main {
     position: absolute;
     top: 50%;

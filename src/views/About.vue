@@ -1,5 +1,6 @@
 <template>
   <div class="about">
+    <div class="about__bg"></div>
     <Navbar class="about__nav" />
     <div class="about__main">
       <h1 class="about__header">About us</h1>
@@ -59,13 +60,17 @@ export default {
 }
 </script>
 <style lang="scss">
-  body {
-    background-image: url('../assets/img/about_background.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-  }
-
   .about {
+    &__bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: url('../assets/img/about_background.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
     &__nav {
       position: fixed;
       top: 0;
