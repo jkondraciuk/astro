@@ -9,7 +9,7 @@ export default {
     props: ['dark'],
     computed: {
         style () {
-            return this.dark === true ? 'color: #27263e': null;
+            return this.dark === true ? 'color: #27263e; text-transform: uppercase;': null;
         }
     }
 }
