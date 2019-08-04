@@ -11,8 +11,8 @@
                    :class="{'home-main__search--dark' : getStep }"
                    @input="handleInput" />
     </div>
-    <div class="home__results">
-      abc
+    <div class="home__results" v-show="getStep">
+      <!-- results here -->
     </div>
   </div>
 </template>
