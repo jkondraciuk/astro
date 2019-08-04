@@ -13,6 +13,9 @@
     </div>
     <div class="home__results" v-show="getStep">
       <!-- results here -->
+      <ul>
+        <li v-for="(result, index) in results" :key="index">{{ result }}</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -78,6 +81,12 @@ export default {
 
   body {
     background: $white !important;
+  }
+
+  .home {
+    &__results {
+      color: $grey-7;
+    }
   }
 
   .home-main {
