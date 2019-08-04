@@ -11,6 +11,9 @@
                    :class="{'home-main__search--dark' : getStep }"
                    @input="handleInput" />
     </div>
+    <div class="home__results">
+      abc
+    </div>
   </div>
 </template>
 
