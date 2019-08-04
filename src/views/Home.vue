@@ -8,6 +8,7 @@
       <Claim v-if="!getStep" />
       <SearchInput v-model="searchValue"
                    :dark="getStep"
+                   :class="{'home-main__search--dark' : getStep }"
                    @input="handleInput" />
     </div>
   </div>
@@ -85,6 +86,12 @@ export default {
 
     &--next {
       top: 10%;
+    }
+
+    &__search {
+      &--dark {
+        margin-top: 18px;
+      }
     }
   }
 
