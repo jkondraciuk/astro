@@ -14,8 +14,11 @@
     <div class="home__results" v-show="getStep">
       <!-- results here -->
       <ul>
-        <li v-for="(result, index) in results" :key="index">
-          <ResultImage :item="result" />
+        <li class="home__result"
+            v-for="(result, index) in results"
+            :key="index">
+          <ResultImage class="home__result-img"
+                       :item="result" />
         </li>
       </ul>
     </div>
@@ -90,6 +93,9 @@ export default {
   .home {
     &__results {
       color: $grey-7;
+    }
+    &__result-img {
+      margin: 0 auto;
     }
   }
 
