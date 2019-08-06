@@ -14,7 +14,7 @@
     <div class="home__results" v-show="getStep">
       <!-- results here -->
       <ul>
-        <li v-for="(result, index) in results" :key="index">{{ result.links[0].href }}
+        <li v-for="(result, index) in results" :key="index">
           <ResultImage :item="result" />
         </li>
       </ul>
