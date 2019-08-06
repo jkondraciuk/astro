@@ -5,10 +5,16 @@
 <script>
 export default {
     name: 'ResultImage',
-    props: ['image'],
+    props: ['item'],
+    data () {
+        return {
+            photo: this.item.links[0].href,
+            title: this.item.data[0].title
+        }
+    },
     computed: {
         style () {
-            return `background-image: (${image})`;
+            return `background-image: url(${this.photo})`;
         }
     }
 }
