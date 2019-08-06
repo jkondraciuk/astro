@@ -13,7 +13,7 @@
     </div>
     <div class="home__results" v-show="getStep">
       <!-- results here -->
-      <ul>
+      <ul class="home__result-list">
         <li class="home__result"
             v-for="(result, index) in results"
             :key="index">
@@ -91,6 +91,9 @@ export default {
   }
 
   .home {
+    &__result-list {
+      margin-top: 25px;
+    }
     &__results {
       color: $grey-7;
     }
