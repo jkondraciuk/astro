@@ -14,7 +14,9 @@
     <div class="home__results" v-show="getStep">
       <!-- results here -->
       <ul>
-        <li v-for="(result, index) in results" :key="index">{{ result }}</li>
+        <li v-for="(result, index) in results" :key="index">{{ result }}
+          <ResultImage />
+        </li>
       </ul>
     </div>
   </div>
@@ -25,6 +27,7 @@ import PageBackground from '@/components/PageBackground/PageBackground';
 import Navbar from '@/components/Navbar/Navbar';
 import Claim from '@/components/Claim/Claim';
 import SearchInput from '@/components/SearchInput/SearchInput';
+import ResultImage from '@/components/ResultImage/ResultImage';
 
 import { mapGetters, mapActions } from 'vuex';
 
@@ -39,7 +42,8 @@ export default {
     PageBackground,
     Navbar,
     Claim,
-    SearchInput
+    SearchInput,
+    ResultImage
   },
   data () {
     return {
