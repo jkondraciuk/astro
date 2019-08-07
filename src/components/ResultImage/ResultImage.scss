@@ -10,3 +10,10 @@
         height: 300px;
     }
 }
+
+@include res(md) {
+    .result-wrapper {
+        width: 320px;
+        height: 210px;
+    }
+}

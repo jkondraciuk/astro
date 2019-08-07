@@ -93,7 +93,8 @@ export default {
 
   .home {
     &__result-list {
-      margin-top: 35px;
+      list-style-type: none;
+      margin-top: 60px;
     }
     &__results {
       color: $grey-7;
@@ -124,12 +125,26 @@ export default {
   @include res(sm) {
     .home {
       &__result-list {
-        margin-top: 45px;
+        margin-top: 65px;
       }
     }
   }
 
   @include res(md) {
+    .home {
+      &__result-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 660px;
+        margin: 0 auto;
+        margin-top: 70px;
+      }
+
+      &__result {
+        margin-bottom: 15px;
+      }
+    }
     .home-main {
       padding-bottom: 20px;
     }
