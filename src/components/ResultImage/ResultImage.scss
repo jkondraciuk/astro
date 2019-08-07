@@ -3,3 +3,10 @@
     height: 210px;
     background-color: $grey-3;
 }
+
+@include res(sm) {
+    .result-wrapper {
+        width: 440px;
+        height: 300px;
+    }
+}

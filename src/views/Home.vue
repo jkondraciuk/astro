@@ -121,6 +121,14 @@ export default {
     }
   }
 
+  @include res(sm) {
+    .home {
+      &__result-list {
+        margin-top: 45px;
+      }
+    }
+  }
+
   @include res(md) {
     .home-main {
       padding-bottom: 20px;
