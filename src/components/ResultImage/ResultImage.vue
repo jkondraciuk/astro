@@ -6,13 +6,10 @@
 export default {
     name: 'ResultImage',
     props: ['item'],
-    data () {
-        return {
-            photo: this.item.links[0].href,
-            title: this.item.data[0].title
-        }
-    },
     computed: {
+        photo () {
+            return this.item.links[0].href;
+        },
         style () {
             return `background-image: url(${this.photo})`;
         }

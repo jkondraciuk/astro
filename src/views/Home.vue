@@ -60,16 +60,18 @@ export default {
     handleInput: debounce (function () {
       if (this.searchValue === '') {
         this.changeStep(false);
-        } else {
-          axios.get(`${API}?q=${this.searchValue}&media_type=image`)
-            .then((response) => {
-              this.results = response.data.collection.items;
-              this.changeStep(true);
-            })
-            .catch((error) => {
-              console.log(error);
-            })
-        }
+      } else {
+        axios.get(`${API}?q=${this.searchValue}&media_type=image`)
+          .then((response) => {
+            this.results = [];
+            this.results = response.data.collection.items;
+            this.changeStep(true);
+            console.log(response)
+          })
+          .catch((error) => {
+            console.log(error);
+          })
+      }
     }, 800)
   },
   computed: {
