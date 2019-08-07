@@ -12,7 +12,6 @@
                    @input="handleInput" />
     </div>
     <div class="home__results" v-show="getStep">
-      <!-- results here -->
       <ul class="home__result-list">
         <li class="home__result"
             v-for="(result, index) in results"
