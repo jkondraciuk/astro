@@ -93,7 +93,7 @@ export default {
 
   .home {
     &__result-list {
-      margin-top: 25px;
+      margin-top: 35px;
     }
     &__results {
       color: $grey-7;
