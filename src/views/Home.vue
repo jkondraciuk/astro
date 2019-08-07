@@ -94,10 +94,13 @@ export default {
   .home {
     &__result-list {
       list-style-type: none;
-      margin-top: 60px;
+      margin-top: 65px;
     }
     &__results {
       color: $grey-7;
+    }
+    &__result {
+      margin-bottom: 15px;
     }
     &__result-img {
       margin: 0 auto;
@@ -126,6 +129,9 @@ export default {
     .home {
       &__result-list {
         margin-top: 65px;
+      }
+      &__result {
+        margin-bottom: 18px;
       }
     }
   }
