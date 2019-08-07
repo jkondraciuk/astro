@@ -153,6 +153,12 @@ export default {
     }
     .home-main {
       padding-bottom: 20px;
+
+      &__search {
+        &--dark {
+          margin-top: 20px;
+        }
+      }
     }
   }
 
