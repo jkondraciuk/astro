@@ -169,7 +169,7 @@ export default {
       }
     }
     .home-main {
-      padding-bottom: 23px;
+      padding-bottom: 18px;
     }
   }
 
@@ -180,7 +180,7 @@ export default {
       }
     }
     .home-main {
-      padding-bottom: 28px;
+      padding-bottom: 23px;
     }
   }
 </style>
