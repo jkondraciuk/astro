@@ -174,6 +174,11 @@ export default {
   }
 
   @include res(xl) {
+    .home {
+      &__result-list {
+        width: 995px;
+      }
+    }
     .home-main {
       padding-bottom: 28px;
     }

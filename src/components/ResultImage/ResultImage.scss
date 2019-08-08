@@ -24,3 +24,10 @@
         height: 190px;
     }
 }
+
+@include res(xl) {
+    .result-wrapper {
+        width: 320px;
+        height: 210px;
+    }
+}
