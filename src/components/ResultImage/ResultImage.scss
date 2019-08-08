@@ -17,3 +17,10 @@
         height: 210px;
     }
 }
+
+@include res(lg) {
+    .result-wrapper {
+        width: 285px;
+        height: 190px;
+    }
+}

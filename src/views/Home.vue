@@ -163,6 +163,11 @@ export default {
   }
 
   @include res(lg) {
+    .home {
+      &__result-list {
+        width: 885px;
+      }
+    }
     .home-main {
       padding-bottom: 23px;
     }
